@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedComponent } from './components/shared/shared.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [SharedComponent],
+  declarations: [SidebarComponent],
   imports: [CommonModule],
-  exports: [SharedComponent],
+  exports: [SidebarComponent],
 })
 export class SharedModule {}
