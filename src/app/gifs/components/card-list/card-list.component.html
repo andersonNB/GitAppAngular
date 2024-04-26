@@ -1,21 +1,19 @@
 <div class="row">
-  <div class="col-md-3 col-md-6">
+  <div *ngFor="let gifs of gifsHijo"  class="col-md-3 col-md-6">
     <div class="card mb-2 text-center bg-dark">
-      <img
+      <!-- <img
         src="https://media.giphy.com/media/3o7TKz9bX9YKuKFWZW/giphy.gif"
+        class="card-img-top"
+        alt="..."
+      /> -->
+      <img
+        src={{gifs.images.preview_webp.url}}
         class="card-img-top"
         alt="..."
       />
       <div class="card-body text-white">
         <!-- este div antes era un p -->
-        <div class="cart-text">
-          <strong>Tarea</strong>
-          <ul class="d-flex align-items-start flex-column">
-            <li>Obtener el valor del input</li>
-            <li>Agregar el valor a nuestro servicio</li>
-            <li>Mandar los valores de nuestro servicio a sidebar</li>
-          </ul>
-        </div>
+        <p class="cart-text">{{gifs.title}} </p>
       </div>
     </div>
   </div>
