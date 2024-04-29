@@ -8,7 +8,7 @@ import { GifsModule } from './gifs/gifs.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ],
   imports: [BrowserModule, AppRoutingModule, GifsModule, SharedModule,HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

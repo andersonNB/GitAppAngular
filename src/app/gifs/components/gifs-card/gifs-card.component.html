@@ -1,0 +1,14 @@
+<div *ngFor="let gifs of gifsCard; count as length; index as index" >
+    <div class="card mb-2 text-center bg-dark">      
+      {{index}}
+      <img
+        [src]="gifs.images.downsized_medium.url "
+        class="card-img-top"
+        [alt]="gifs.title"
+      />
+      <div class="card-body text-white">
+        <!-- este div antes era un p -->
+        <p class="cart-text">{{gifs.title}} </p>
+      </div>
+    </div>
+  </div>
