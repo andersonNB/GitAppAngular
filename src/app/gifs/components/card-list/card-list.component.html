@@ -1,13 +1,15 @@
 <div class="row justify-content-center">
-  <div *ngIf="gifsHijo.length === 0"  class="col-md-3 col-md-6" >
+  <div *ngIf="gifsHijo.length === 0"  class="col-md-6" >
     <img
         src="https://media.giphy.com/media/3o7TKz9bX9YKuKFWZW/giphy.gif"
         class="card-img-top"
         alt="..."
       />
   </div>
-  <gifs-card 
-  [gifsCard]="gifsHijo" 
-  class="col-md-3 col-md-6"
+  <gifs-card
+  *ngFor="let gifs of gifsHijo" 
+  [gifsCard]="gifs" 
+  class="col-md-6 col-sm-6"
    ></gifs-card>
+  
 </div>
